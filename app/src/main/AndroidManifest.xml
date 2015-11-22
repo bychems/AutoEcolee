@@ -29,6 +29,13 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".SuiteInscription" >
+            <intent-filter>
+                <action android:name="com.example.chemss.autoecolee.SUITEINSCRIPTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Connexion" >
             <intent-filter>
                 <action android:name="com.example.chemss.autoecolee.CONNEXION" />
@@ -36,6 +43,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".Tarif" >
+            <intent-filter>
+                <action android:name="com.example.chemss.autoecolee.TARIF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
 
 
 

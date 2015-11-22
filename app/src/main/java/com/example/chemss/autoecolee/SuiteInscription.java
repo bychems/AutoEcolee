@@ -9,32 +9,21 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-public class Inscription extends ActionBarActivity {
+public class SuiteInscription extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.inscription);
+        setContentView(R.layout.suiteinscription);
 
-        Button btSuite=(Button)findViewById(R.id.btSuite);
-        btSuite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Inscription.this, SuiteInscription.class);
-                startActivity(intent);
-            }
-        });
-
-        Button btAnnuler=(Button)findViewById(R.id.btAnnuler);
+        Button btAnnuler=(Button)findViewById(R.id.btRetour);
         btAnnuler.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Inscription.this, Accueil.class);
+                Intent intent = new Intent(SuiteInscription.this, Inscription.class);
                 startActivity(intent);
             }
         });
-
-
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -47,19 +36,19 @@ public class Inscription extends ActionBarActivity {
         switch (item.getItemId()) {
             case R.id.Accueil:
             {
-                Intent intent = new Intent(Inscription.this, Accueil.class);
+                Intent intent = new Intent(SuiteInscription.this, Accueil.class);
                 startActivity(intent);
             }
             return true;
             case R.id.Inscription:
             {
-                Intent intent = new Intent(Inscription.this, Inscription.class);
+                Intent intent = new Intent(SuiteInscription.this, Inscription.class);
                 startActivity(intent);
             }
             return true;
             case R.id.Connexion:
             {
-                Intent intent = new Intent(Inscription.this, Connexion.class);
+                Intent intent = new Intent(SuiteInscription.this, Connexion.class);
                 startActivity(intent);
             }
             return true;

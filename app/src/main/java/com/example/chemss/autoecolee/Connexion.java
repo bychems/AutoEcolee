@@ -8,16 +8,23 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import java.sql.BatchUpdateException;
 
 public class Connexion extends ActionBarActivity {
 
+    private EditText login,password;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.connexion);
+
         Button btInscription=(Button)findViewById(R.id.btInscription);
+        Button btConnexion=(Button)findViewById(R.id.btConnexion);
+
+
 
         btInscription.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +65,13 @@ public class Connexion extends ActionBarActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void login(View view){
+        String username =login.getText().toString();
+        String pass =password.getText().toString();
+        new SigninActivity(this).execute(username,pass);
+
     }
 
 

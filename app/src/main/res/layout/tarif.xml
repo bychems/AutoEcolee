@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Tarifs"
+            android:id="@+id/tvPresentation"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="80dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/tvcode"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="Heure de code="
+                android:textColor="#FFFFFFFF"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvTarifCode"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:text="7 DT"
+                android:textColor="#FFFFFFFF"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/tvconduite"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="Heure de conduite="
+                android:textColor="#FFFFFFFF"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvTarifConduite"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:text="16 DT"
+                android:textColor="#FFFFFFFF"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/tvWafka"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:gravity="center"
+                android:text="Prix WAF9A="
+                android:textColor="#FFFFFFFF"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvTarifWafka"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:gravity="center"
+                android:text="550 DT"
+                android:textColor="#FFFFFFFF"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="100dp"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adresse: "
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rue 6691 , ibn Khaldoun, Tunis 2062, Tunisie"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="26 700 087 / 23 301 218 "
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- mazkamel@gmail.com"
+                android:textStyle="italic"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+</LinearLayout>
