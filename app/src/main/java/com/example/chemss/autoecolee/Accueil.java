@@ -44,7 +44,7 @@ public class Accueil extends ActionBarActivity {
                 return true;
             case R.id.Inscription:
             {
-                Intent intent = new Intent(Accueil.this, Inscription.class);
+                Intent intent = new Intent(Accueil.this, SuiteInscription.class);
                 startActivity(intent);
             }
                 return true;
