@@ -10,4 +10,7 @@ public class AppConfig {
 
     // Server user register url
     public static String URL_REGISTER = "http://192.168.56.1:90/WebService/register.php";
+
+    // Server user reserver url
+    public static String URL_RESERVER = "http://192.168.56.1:90/WebService/reserver.php";
 }

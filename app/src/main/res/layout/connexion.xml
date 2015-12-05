@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="60"
             android:gravity="center"
-            android:text="Login:"
+            android:text="Email:"
             android:textColor="#FFFFFFFF"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -76,15 +76,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="10.07"
             android:background="#E6E6E6"
-            android:ems="10" />
+            android:ems="10"
+            android:password="true"/>
 
     </LinearLayout>
 
     <CheckBox
-        android:id="@+id/chkMdp"
+        android:id="@+id/cbMdp"
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:layout_gravity="right"
+        android:paddingRight="40dp"
         android:text="Afficher mot de passe"
         android:textSize="15dp"
         android:textColor="#FFFFFF"/>

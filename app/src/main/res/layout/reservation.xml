@@ -58,7 +58,8 @@
             android:layout_width="159dp"
             android:layout_height="58dp"
             android:layout_marginTop="10dp"
-            android:layout_weight="50" />
+            android:layout_weight="50"
+            android:entries="@array/jour"/>
     </LinearLayout>
 
 
@@ -85,7 +86,8 @@
             android:layout_width="159dp"
             android:layout_height="58dp"
             android:layout_marginTop="10dp"
-            android:layout_weight="50" />
+            android:layout_weight="50"
+            android:entries="@array/heure"/>
     </LinearLayout>
 
     <LinearLayout
@@ -95,21 +97,23 @@
         android:orientation="horizontal"
         android:paddingTop="10dp">
 
-        <CheckBox
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Code"
-            android:textColor="#FFF"
-            android:textSize="20dp"
-            android:id="@+id/cbCode"/>
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Conduite"
-            android:textColor="#FFF"
-            android:textSize="20dp"
-            android:id="@+id/cbConduite"
-            android:layout_marginLeft="20dp"/>
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Code"
+                android:textColor="#FFF"
+                android:id="@+id/rbCode"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conduite"
+                android:textColor="#FFF"
+                android:id="@+id/rbConduite"/>
+        </RadioGroup>
 
     </LinearLayout>
 
